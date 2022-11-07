@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- google font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Space invaders</title>
+</head>
+<body>
+    <h1><img id="title-img" class="title-img-big" src="img/title.png"></h1>
+    <div id="selector">
+        <div class="arrow blinker"><p>&lt</p></div>
+        <div id ="selItem"></div>
+        <div class="arrow blinker"><p> &gt</p></div>
+    </div>
+    <div id="messages">
+        <p class="welcome-msg">Use arrows to move and spacebar to shoot</p>
+        <p class="blinker welcome-msg">Presh spacebar to start playing</p>
+        <p class="blinker selector-msg">Presh spacebar to select</p>
+        <p class="end-msg gameover-msg">GAME OVER</p>
+        <p class="end-msg win-msg">YOU WIN</p>
+        <p class="end-msg blinker playagain-msg">Presh spacebar to play again</p>
+    </div>
+    <div id="canvas"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>

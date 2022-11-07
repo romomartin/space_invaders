@@ -1,0 +1,122 @@
+html{
+    height: 100vh;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-image:  url(img/starry_background.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: 'Press Start 2P'; 
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.title-img-big{
+    height: 380px;
+    padding: 20px 0 100px 0; 
+}
+.title-img-small{
+    animation: title-img-reduce .5s linear 0s 1 forwards;
+}
+
+@keyframes title-img-reduce {
+    from { height:380px }
+    to { height:60px }
+}
+
+#messages{
+    padding: 1em;
+    text-align: center;
+    color: lightgray;
+    font-size: 1em;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,0.3), rgba(0,0,0,0));
+}
+
+.selector-msg{
+    display: none;
+}
+
+
+.blinker{
+    animation: blink-text .6s ease-in-out 1s infinite alternate;
+}
+
+@keyframes blink-text {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+}
+
+#selector{
+    display: none;
+    margin: 80px auto 0;
+    width: 700px;
+    height: 300px;
+}
+
+.arrow{
+    width: 200px;
+    height: 300px;
+    font-size: 8em;
+    text-align: center;
+    color: white;
+}
+.arrow p{
+    line-height: 300px;
+    margin: 0;
+}
+
+#selItem{
+    width: 300px;
+    height: 300px;
+    background-image: url("img/spaceship1.png");
+    background-repeat: no-repeat; 
+    background-size: 270px;
+    background-position: center;    
+}
+
+#canvas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.tile {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background-image: none;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.invader {
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.laser {
+    background: linear-gradient(cyan, magenta) no-repeat center/2px 60%;
+}
+
+.end-msg,
+.gameover-msg,
+.win-msg,
+.playagain-msg {
+    display: none;
+}
+
+.win-msg,
+.gameover-msg{
+    font-size: 4em;
+}
